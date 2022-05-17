@@ -1,4 +1,4 @@
-import time
+import time 
 import os
 import pathlib
 from selenium import webdriver
