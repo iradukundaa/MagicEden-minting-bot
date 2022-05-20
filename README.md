@@ -8,8 +8,6 @@ Easy setup which uses ChromeDriver to open up a new chrome instance and mint the
 
 - This bot sends a request to the magiceden server.
 
-- There will be no 0.01SOL commission
-
 - Make sure the time on your computer is set correctly.
 - For Support: 7XGhYc1dDAzrAjqV2nhLjHQ9nLzmZ1VSqRTggjbt3SoM (sol)
 
