@@ -12,6 +12,7 @@ Easy setup which uses ChromeDriver to open up a new chrome instance and mint the
 - For Support: 7XGhYc1dDAzrAjqV2nhLjHQ9nLzmZ1VSqRTggjbt3SoM (sol)
 
 I laughed heartily, thank you
+Our bots died guys, no one uses after the collapse of the blockchain
 
 You can **launch multiple instances of the bot to bypass minting limit / wallet**
 
