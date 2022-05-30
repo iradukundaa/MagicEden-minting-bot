@@ -153,3 +153,5 @@ def mint(values, isWindows):
     avaitMint()
 
     print("Minting Finished")
+    
+    # Updating the connection configuration to MagicEden
