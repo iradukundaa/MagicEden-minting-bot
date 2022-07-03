@@ -58,9 +58,9 @@ def mint(values, isWindows):
     def selectWallet():
         print("Status - Selecting wallet on ME")
         WebDriverWait(driver, 60).until(EC.presence_of_element_located(
-            (By.XPATH, "//button[contains(text(), 'Select Wallet')]")))
+            (By.XPATH, "//button[contains(text(), 'Connect Wallet')]")))
         select_wallet = driver.find_element(
-            By.XPATH, "//button[contains(text(), 'Select Wallet')]")
+            By.XPATH, "//button[contains(text(), 'Connect Wallet')]")
         select_wallet.click()
 
         WebDriverWait(driver, 60).until(EC.presence_of_element_located(
