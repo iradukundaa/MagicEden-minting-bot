@@ -1,4 +1,4 @@
-import time 
+import time
 import os
 import pathlib
 from selenium import webdriver
@@ -19,7 +19,10 @@ def mint(values, isWindows):
         print("Status - Initializing wallet")
         # add wallet to chrome
 
-        driver.switch_to.window(driver.window_handles[1])
+        if driver.current_url != "chrome-extension://gfoeaaijjjdneafnjccohndgdljjoemp/onboarding.html":
+            driver.switch_to.window(driver.window_handles[0])
+        if driver.current_url != "chrome-extension://gfoeaaijjjdneafnjccohndgdljjoemp/onboarding.html":
+            driver.switch_to.window(driver.window_handles[1])
 
         print("Event - switch window")
         WebDriverWait(driver, 60).until(EC.presence_of_element_located(
@@ -58,9 +61,9 @@ def mint(values, isWindows):
     def selectWallet():
         print("Status - Selecting wallet on ME")
         WebDriverWait(driver, 60).until(EC.presence_of_element_located(
-            (By.XPATH, "//button[contains(text(), 'Connect Wallet')]")))
+            (By.XPATH, "//button[contains(text(), 'Select Wallet')]")))
         select_wallet = driver.find_element(
-            By.XPATH, "//button[contains(text(), 'Connect Wallet')]")
+            By.XPATH, "//button[contains(text(), 'Select Wallet')]")
         select_wallet.click()
 
         WebDriverWait(driver, 60).until(EC.presence_of_element_located(
@@ -153,5 +156,3 @@ def mint(values, isWindows):
     avaitMint()
 
     print("Minting Finished")
-
-    
