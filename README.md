@@ -1,3 +1,16 @@
+After successful use of the bot you can tweet me DM about further cooperation.
+There are packages that include:
+MagicEden Minitng bot
+MagicEden Sniper
+LounchMyNFT Minting bot
+CoralCube Sniper
+Separate RPC
+CandyMachine minting
+MonkeLabs bot
+
+
+
+
 <p align="center">
   <a href="#">
     <img
@@ -96,4 +109,6 @@ You can contact me be creating an issue here, if you want to support me with som
 -   This bot uses ChromeDriver so on mac there is a possibility that you will have to **allow the software to run in your privacy settings**. Check mac folder for more info.
 
 -   The chrome window will appear **WITHOUT** loading the images, this is to ensure the fastest loading.
+
+
 
