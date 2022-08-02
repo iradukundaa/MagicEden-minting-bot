@@ -25,17 +25,17 @@ def mint(values, isWindows):
             driver.switch_to.window(driver.window_handles[1])
 
         print("Event - switch window")
-        WebDriverWait(driver, 60).until(EC.presence_of_element_located(
+        WebDriverWait(driver, 120).until(EC.presence_of_element_located(
             (By.XPATH, "//button[contains(text(),'Use Secret Recovery Phrase')]")))
         recovery_phrase = driver.find_element(
             By.XPATH, "//button[contains(text(),'Use Secret Recovery Phrase')]").click()
-        WebDriverWait(driver, 60).until(EC.presence_of_element_located(
+        WebDriverWait(driver, 120).until(EC.presence_of_element_located(
             (By.XPATH, "//textarea[@placeholder='Secret phrase']")))
         text_area = driver.find_element(
             By.XPATH, "//textarea[@placeholder='Secret phrase']").send_keys(values[1])
         import_btn = driver.find_element(
             By.XPATH, "//button[@class='sc-bdfBQB bzlPNH']").click()
-        WebDriverWait(driver, 60).until(EC.presence_of_element_located(
+        WebDriverWait(driver, 120).until(EC.presence_of_element_located(
             (By.XPATH, "//input[@placeholder='Password']")))
         password1 = driver.find_element(
             By.XPATH, "//input[@placeholder='Password']").send_keys(values[2])
@@ -45,12 +45,12 @@ def mint(values, isWindows):
             By.XPATH, "//input[@type='checkbox']").click()
         submit = driver.find_element(
             By.XPATH, "//button[@type='submit']").click()
-        WebDriverWait(driver, 60).until(EC.presence_of_element_located(
+        WebDriverWait(driver, 120).until(EC.presence_of_element_located(
             (By.XPATH, "//button[contains(text(),'Continue')]")))
         continue_ = driver.find_element(
             By.XPATH, "//button[contains(text(),'Continue')]")
         driver.execute_script("arguments[0].click();", continue_)
-        WebDriverWait(driver, 60).until(EC.presence_of_element_located(
+        WebDriverWait(driver, 120).until(EC.presence_of_element_located(
             (By.XPATH, "//button[contains(text(),'Finish')]")))
         finish = driver.find_element(
             By.XPATH, "//button[contains(text(),'Finish')]")
@@ -59,11 +59,11 @@ def mint(values, isWindows):
         driver.switch_to.window(driver.window_handles[0])
 
     def selectWallet():
-        print("Status - Selecting wallet on ME")
+        print("Status - Connecting wallet on ME")
         WebDriverWait(driver, 60).until(EC.presence_of_element_located(
-            (By.XPATH, "//button[contains(text(), 'Select Wallet')]")))
+            (By.XPATH, "//button[contains(text(), 'Connect Wallet')]")))
         select_wallet = driver.find_element(
-            By.XPATH, "//button[contains(text(), 'Select Wallet')]")
+            By.XPATH, "//button[contains(text(), 'Connect Wallet')]")
         select_wallet.click()
 
         WebDriverWait(driver, 60).until(EC.presence_of_element_located(
