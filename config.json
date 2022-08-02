@@ -1,5 +1,5 @@
 {
-    "launchpadLink": "link lounchpad",
-    "seedPhrase": "input passphrase here",
+    "launchpadLink": "Provide a link to the sale",
+    "seedPhrase": "Specify the passphrase wallet",
     "password": "Password1234"
 }
