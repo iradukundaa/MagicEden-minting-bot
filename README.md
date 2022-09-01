@@ -1,16 +1,3 @@
-After successful use of the bot you can tweet me DM about further cooperation.
-There are packages that include:
-- MagicEden Minitng bot
-- MagicEden Sniper
-- LounchMyNFT Minting bot
-- CoralCube Sniper
-- Separate RPC
-- CandyMachine mint
-- MonkeLabs mint
-
-
-
-
 <p align="center">
   <a href="#">
     <img
